@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06A1C6F91431783B001FF256 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A1C6F81431783B001FF256 /* UIKit.framework */; };
+		06A1C6FB1431783B001FF256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A1C6FA1431783B001FF256 /* Foundation.framework */; };
+		06A1C6FD1431783B001FF256 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A1C6FC1431783B001FF256 /* CoreGraphics.framework */; };
+		06A1C7031431783B001FF256 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06A1C7011431783B001FF256 /* InfoPlist.strings */; };
+		06A1C7051431783B001FF256 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1C7041431783B001FF256 /* main.m */; };
+		06A1C7091431783B001FF256 /* SuperSliderDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1C7081431783B001FF256 /* SuperSliderDemoAppDelegate.m */; };
+		06A1C70C1431783C001FF256 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A1C70A1431783C001FF256 /* MainWindow.xib */; };
+		06A1C70F1431783C001FF256 /* SuperSliderDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1C70E1431783C001FF256 /* SuperSliderDemoViewController.m */; };
+		06A1C7121431783C001FF256 /* SuperSliderDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A1C7101431783C001FF256 /* SuperSliderDemoViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06A1C6F41431783B001FF256 /* SuperSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A1C6F81431783B001FF256 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06A1C6FA1431783B001FF256 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06A1C6FC1431783B001FF256 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06A1C7001431783B001FF256 /* SuperSliderDemo-Info.plist */ = {isa = PBXFileReference; path = "SuperSliderDemo-Info.plist"; sourceTree = "<group>"; };
+		06A1C7021431783B001FF256 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06A1C7041431783B001FF256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06A1C7061431783B001FF256 /* SuperSliderDemo-Prefix.pch */ = {isa = PBXFileReference; path = "SuperSliderDemo-Prefix.pch"; sourceTree = "<group>"; };
+		06A1C7071431783B001FF256 /* SuperSliderDemoAppDelegate.h */ = {isa = PBXFileReference; path = SuperSliderDemoAppDelegate.h; sourceTree = "<group>"; };
+		06A1C7081431783B001FF256 /* SuperSliderDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSliderDemoAppDelegate.m; sourceTree = "<group>"; };
+		06A1C70B1431783C001FF256 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		06A1C70D1431783C001FF256 /* SuperSliderDemoViewController.h */ = {isa = PBXFileReference; path = SuperSliderDemoViewController.h; sourceTree = "<group>"; };
+		06A1C70E1431783C001FF256 /* SuperSliderDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSliderDemoViewController.m; sourceTree = "<group>"; };
+		06A1C7111431783C001FF256 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SuperSliderDemoViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06A1C6F11431783B001FF256 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A1C6F91431783B001FF256 /* UIKit.framework in Frameworks */,
+				06A1C6FB1431783B001FF256 /* Foundation.framework in Frameworks */,
+				06A1C6FD1431783B001FF256 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06A1C6E91431783B001FF256 = {
+			isa = PBXGroup;
+			children = (
+				06A1C6FE1431783B001FF256 /* SuperSliderDemo */,
+				06A1C6F71431783B001FF256 /* Frameworks */,
+				06A1C6F51431783B001FF256 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06A1C6F51431783B001FF256 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06A1C6F41431783B001FF256 /* SuperSliderDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06A1C6F71431783B001FF256 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06A1C6F81431783B001FF256 /* UIKit.framework */,
+				06A1C6FA1431783B001FF256 /* Foundation.framework */,
+				06A1C6FC1431783B001FF256 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06A1C6FE1431783B001FF256 /* SuperSliderDemo */ = {
+			isa = PBXGroup;
+			children = (
+				06A1C7071431783B001FF256 /* SuperSliderDemoAppDelegate.h */,
+				06A1C7081431783B001FF256 /* SuperSliderDemoAppDelegate.m */,
+				06A1C70A1431783C001FF256 /* MainWindow.xib */,
+				06A1C70D1431783C001FF256 /* SuperSliderDemoViewController.h */,
+				06A1C70E1431783C001FF256 /* SuperSliderDemoViewController.m */,
+				06A1C7101431783C001FF256 /* SuperSliderDemoViewController.xib */,
+				06A1C6FF1431783B001FF256 /* Supporting Files */,
+			);
+			path = SuperSliderDemo;
+			sourceTree = "<group>";
+		};
+		06A1C6FF1431783B001FF256 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06A1C7001431783B001FF256 /* SuperSliderDemo-Info.plist */,
+				06A1C7011431783B001FF256 /* InfoPlist.strings */,
+				06A1C7041431783B001FF256 /* main.m */,
+				06A1C7061431783B001FF256 /* SuperSliderDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06A1C6F31431783B001FF256 /* SuperSliderDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A1C7151431783C001FF256 /* Build configuration list for PBXNativeTarget "SuperSliderDemo" */;
+			buildPhases = (
+				06A1C6F01431783B001FF256 /* Sources */,
+				06A1C6F11431783B001FF256 /* Frameworks */,
+				06A1C6F21431783B001FF256 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperSliderDemo;
+			productName = SuperSliderDemo;
+			productReference = 06A1C6F41431783B001FF256 /* SuperSliderDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06A1C6EB1431783B001FF256 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 06A1C6EE1431783B001FF256 /* Build configuration list for PBXProject "SuperSliderDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06A1C6E91431783B001FF256;
+			productRefGroup = 06A1C6F51431783B001FF256 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06A1C6F31431783B001FF256 /* SuperSliderDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06A1C6F21431783B001FF256 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A1C7031431783B001FF256 /* InfoPlist.strings in Resources */,
+				06A1C70C1431783C001FF256 /* MainWindow.xib in Resources */,
+				06A1C7121431783C001FF256 /* SuperSliderDemoViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06A1C6F01431783B001FF256 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A1C7051431783B001FF256 /* main.m in Sources */,
+				06A1C7091431783B001FF256 /* SuperSliderDemoAppDelegate.m in Sources */,
+				06A1C70F1431783C001FF256 /* SuperSliderDemoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06A1C7011431783B001FF256 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A1C7021431783B001FF256 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06A1C70A1431783C001FF256 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A1C70B1431783C001FF256 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		06A1C7101431783C001FF256 /* SuperSliderDemoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A1C7111431783C001FF256 /* en */,
+			);
+			name = SuperSliderDemoViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06A1C7131431783C001FF256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06A1C7141431783C001FF256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06A1C7161431783C001FF256 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperSliderDemo/SuperSliderDemo-Prefix.pch";
+				INFOPLIST_FILE = "SuperSliderDemo/SuperSliderDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06A1C7171431783C001FF256 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperSliderDemo/SuperSliderDemo-Prefix.pch";
+				INFOPLIST_FILE = "SuperSliderDemo/SuperSliderDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06A1C6EE1431783B001FF256 /* Build configuration list for PBXProject "SuperSliderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A1C7131431783C001FF256 /* Debug */,
+				06A1C7141431783C001FF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A1C7151431783C001FF256 /* Build configuration list for PBXNativeTarget "SuperSliderDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A1C7161431783C001FF256 /* Debug */,
+				06A1C7171431783C001FF256 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06A1C6EB1431783B001FF256 /* Project object */;
+}
