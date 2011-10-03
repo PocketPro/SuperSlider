@@ -16,6 +16,7 @@
 		06A1C70C1431783C001FF256 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A1C70A1431783C001FF256 /* MainWindow.xib */; };
 		06A1C70F1431783C001FF256 /* SuperSliderDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1C70E1431783C001FF256 /* SuperSliderDemoViewController.m */; };
 		06A1C7121431783C001FF256 /* SuperSliderDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06A1C7101431783C001FF256 /* SuperSliderDemoViewController.xib */; };
+		06A1C71A14317855001FF256 /* SuperSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 06A1C71914317855001FF256 /* SuperSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +24,18 @@
 		06A1C6F81431783B001FF256 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06A1C6FA1431783B001FF256 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		06A1C6FC1431783B001FF256 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		06A1C7001431783B001FF256 /* SuperSliderDemo-Info.plist */ = {isa = PBXFileReference; path = "SuperSliderDemo-Info.plist"; sourceTree = "<group>"; };
+		06A1C7001431783B001FF256 /* SuperSliderDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperSliderDemo-Info.plist"; sourceTree = "<group>"; };
 		06A1C7021431783B001FF256 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06A1C7041431783B001FF256 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		06A1C7061431783B001FF256 /* SuperSliderDemo-Prefix.pch */ = {isa = PBXFileReference; path = "SuperSliderDemo-Prefix.pch"; sourceTree = "<group>"; };
-		06A1C7071431783B001FF256 /* SuperSliderDemoAppDelegate.h */ = {isa = PBXFileReference; path = SuperSliderDemoAppDelegate.h; sourceTree = "<group>"; };
+		06A1C7061431783B001FF256 /* SuperSliderDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperSliderDemo-Prefix.pch"; sourceTree = "<group>"; };
+		06A1C7071431783B001FF256 /* SuperSliderDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperSliderDemoAppDelegate.h; sourceTree = "<group>"; };
 		06A1C7081431783B001FF256 /* SuperSliderDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSliderDemoAppDelegate.m; sourceTree = "<group>"; };
 		06A1C70B1431783C001FF256 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		06A1C70D1431783C001FF256 /* SuperSliderDemoViewController.h */ = {isa = PBXFileReference; path = SuperSliderDemoViewController.h; sourceTree = "<group>"; };
+		06A1C70D1431783C001FF256 /* SuperSliderDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperSliderDemoViewController.h; sourceTree = "<group>"; };
 		06A1C70E1431783C001FF256 /* SuperSliderDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperSliderDemoViewController.m; sourceTree = "<group>"; };
 		06A1C7111431783C001FF256 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SuperSliderDemoViewController.xib; sourceTree = "<group>"; };
+		06A1C71814317855001FF256 /* SuperSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuperSlider.h; sourceTree = "<group>"; };
+		06A1C71914317855001FF256 /* SuperSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuperSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,8 @@
 		06A1C6E91431783B001FF256 = {
 			isa = PBXGroup;
 			children = (
+				06A1C71814317855001FF256 /* SuperSlider.h */,
+				06A1C71914317855001FF256 /* SuperSlider.m */,
 				06A1C6FE1431783B001FF256 /* SuperSliderDemo */,
 				06A1C6F71431783B001FF256 /* Frameworks */,
 				06A1C6F51431783B001FF256 /* Products */,
@@ -164,6 +169,7 @@
 				06A1C7051431783B001FF256 /* main.m in Sources */,
 				06A1C7091431783B001FF256 /* SuperSliderDemoAppDelegate.m in Sources */,
 				06A1C70F1431783C001FF256 /* SuperSliderDemoViewController.m in Sources */,
+				06A1C71A14317855001FF256 /* SuperSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,10 +249,12 @@
 		06A1C7161431783C001FF256 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gordie Parke (8W48VGFY3W)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperSliderDemo/SuperSliderDemo-Prefix.pch";
 				INFOPLIST_FILE = "SuperSliderDemo/SuperSliderDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D8F8CFF2-E24F-47F0-ACBB-1B9528DED7CC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -254,10 +262,14 @@
 		06A1C7171431783C001FF256 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gordie Parke (8W48VGFY3W)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gordie Parke (PB7HJG3838)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SuperSliderDemo/SuperSliderDemo-Prefix.pch";
 				INFOPLIST_FILE = "SuperSliderDemo/SuperSliderDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "D8F8CFF2-E24F-47F0-ACBB-1B9528DED7CC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B075174E-8FE2-4911-A8D9-4A7A85363A10";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -281,6 +293,7 @@
 				06A1C7171431783C001FF256 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

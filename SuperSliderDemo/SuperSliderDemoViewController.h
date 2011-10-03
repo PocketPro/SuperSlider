@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class LineSlider;
 
 @interface SuperSliderDemoViewController : UIViewController
+
+@property (nonatomic, retain) IBOutlet LineSlider *slider;
 
 @end
