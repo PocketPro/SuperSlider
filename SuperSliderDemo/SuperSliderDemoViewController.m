@@ -36,8 +36,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self.slider setStartPoint:CGPointZero];
-    [self.slider setEndPoint:CGPointMake(320, 160)];
+    //[self.slider setStartPoint:CGPointZero];
+    //[self.slider setEndPoint:CGPointMake(320, 160)];
+    self.slider.circleRadius = self.slider.thumbView.bounds.size.height/2.0;
+    //self.slider.thumbOffset = -self.slider.thumbView.bounds.size.height/2.0;
     [self.slider viewWillAppear:YES];
 }
 

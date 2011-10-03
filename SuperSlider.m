@@ -7,11 +7,13 @@
 //
 
 #import "SuperSlider.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface SuperSlider ()
 - (void)incrementIndexAtIndex:(CGFloat)index withTouch:(UITouch*)touch;
 - (CGFloat)getAngleBetweenNormalAtIndex:(CGFloat)index andTouchPoint:(CGPoint)touchPoint;
 - (CGPoint)getNormalVectorAtIndex:(CGFloat)index;
+-(void)updateThumbView;
 @end
 
 @implementation SuperSlider
@@ -19,19 +21,22 @@
 @synthesize startIndex, currentIndex, endIndex;
 @synthesize thumbView; 
 @synthesize isMovingThumb;
-@synthesize flipThumbVertical, flipThumbHorizontal, thumbOffset;
+@synthesize flipThumb, thumbOffset;
+@synthesize circleCenter, circleRadius, circleIndexToAngle;
+
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
     self = [super initWithCoder:aDecoder];
     if (self) {
         startIndex = 0;
-        endIndex = 1;
+        endIndex = M_PI;
         currentIndex = 0.5;
-        flipThumbVertical = FALSE;
-        flipThumbHorizontal = FALSE;
-        thumbOffset = 0;
-        isMovingThumb = FALSE;
+        
+        // Set defaults
+        circleCenter = CGPointMake(100,100);
+        circleRadius = 100.0;
+        circleIndexToAngle = 1;
     }
     return self;
 }
@@ -62,7 +67,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    thumbView.center = [self pointForIndex:currentIndex];
+    [self updateThumbView];
 }
 
 - (void)viewDidUnload
@@ -76,6 +81,34 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+#pragma mark - Default Method Implementations
+- (CGPoint) pointForIndex:(CGFloat)index{
+    CGFloat angle = circleIndexToAngle*index;
+    return CGPointMake(circleRadius*sinf(angle) + circleCenter.x, -circleRadius*cosf(angle) + circleCenter.y);
+}
+
+
+#pragma mark - Update Thumb View Methods
+- (void)updateThumbView{
+    CGPoint newPoint = [self pointForIndex:currentIndex];
+    
+    // Get normal vector
+    CGPoint normal = [self getNormalVectorAtIndex:currentIndex];
+    CGFloat mag = sqrtf(powf(normal.x,2) + powf(normal.y, 2));
+    normal.x /= mag;
+    normal.y /= mag;
+    
+    // Get new thumb center
+    newPoint.x += thumbOffset * normal.x;
+    newPoint.y += thumbOffset * normal.y;
+    
+    // Rotate thumb
+    CGAffineTransform transform = CGAffineTransformMake(-normal.y, normal.x, -normal.x, -normal.y, 0 ,0);
+    thumbView.transform = transform;
+    
+    self.thumbView.center = newPoint;
 }
 
 #pragma mark - Touch Methods
@@ -97,8 +130,8 @@
     // Calculate the new angle based on position. Set the new position.
     if (isMovingThumb) {
         [self incrementIndexAtIndex:self.currentIndex withTouch:touch];
-        CGPoint newPoint = [self pointForIndex:self.currentIndex];
-        self.thumbView.center = newPoint;
+        
+        [self updateThumbView];
     }
 }
 

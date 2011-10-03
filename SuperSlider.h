@@ -14,10 +14,14 @@
 @property (readwrite) CGFloat endIndex;
 @property (readwrite) CGFloat currentIndex;
 @property (readwrite) BOOL isMovingThumb;
-@property (readwrite) BOOL flipThumbHorizontal;
-@property (readwrite) BOOL flipThumbVertical;
+@property (readwrite) BOOL flipThumb;
 @property (readwrite) CGFloat thumbOffset;
 @property (nonatomic, retain) IBOutlet UIView *thumbView;
+
+// Default properties
+@property CGPoint circleCenter;
+@property CGFloat circleRadius;
+@property CGFloat circleIndexToAngle;
 
 @end
 
